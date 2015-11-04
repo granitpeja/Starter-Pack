@@ -17,7 +17,7 @@ gulp.task('less', function () {
     }))
     .pipe(concat('main.css'))
     .pipe(minifyCSS())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('bowerLess', function () {
@@ -29,7 +29,7 @@ gulp.task('bowerLess', function () {
     }))
     .pipe(concat('bower.css'))
     .pipe(minifyCSS())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('scripts', function() {
