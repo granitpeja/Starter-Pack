@@ -35,7 +35,7 @@ gulp.task('bowerLess', function () {
 gulp.task('scripts', function() {
 	return gulp.src('js/**/*.js')
 		.pipe(concat('all.js'))
-		.pipe(gulp.dest('public'));
+		.pipe(gulp.dest('public/js'));
 });
 
 gulp.task('jade', function() {
@@ -51,7 +51,7 @@ gulp.task('bowerScripts', function() {
 			'bower_components/bootstrap/js/bootstrap.min.js'
 		])
 		.pipe(concat('bower.js'))
-		.pipe(gulp.dest('public'));
+		.pipe(gulp.dest('public/js'));
 })
 
 gulp.task('default', ['jade', 'scripts', 'less', 'bowerScripts', 'bowerLess'], function() {
