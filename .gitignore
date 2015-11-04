@@ -1,3 +1,5 @@
 /node_modules
 /bower_components
-/public/*
+/public/all.js
+/public/bower.js
+/public/css/bower.css
