@@ -13,7 +13,7 @@ App.config(function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider.state('home', {
 		url: '/home',
-		template: '<h1>hiniiii</h1>'
+		template: '<h1>hinii</h1>'
 	});
 
 });
