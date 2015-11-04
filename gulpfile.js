@@ -17,7 +17,7 @@ gulp.task('less', function () {
     }))
     .pipe(concat('main.css'))
     .pipe(minifyCSS())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('bowerLess', function () {
@@ -29,13 +29,13 @@ gulp.task('bowerLess', function () {
     }))
     .pipe(concat('bower.css'))
     .pipe(minifyCSS())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('scripts', function() {
 	return gulp.src('js/**/*.js')
 		.pipe(concat('all.js'))
-		.pipe(gulp.dest('public'));
+		.pipe(gulp.dest('public/js'));
 });
 
 gulp.task('jade', function() {
@@ -51,7 +51,7 @@ gulp.task('bowerScripts', function() {
 			'bower_components/bootstrap/js/bootstrap.min.js'
 		])
 		.pipe(concat('bower.js'))
-		.pipe(gulp.dest('public'));
+		.pipe(gulp.dest('public/js'));
 })
 
 gulp.task('default', ['jade', 'scripts', 'less', 'bowerScripts', 'bowerLess'], function() {
