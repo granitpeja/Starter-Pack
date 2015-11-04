@@ -9,12 +9,11 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "angular": "~1.4.7",
-    "bootstrap-less": "3.3.4"
+    "bootstrap": "3.3.5",
+    "angular-ui-router": "0.2.15"
   }
 }
