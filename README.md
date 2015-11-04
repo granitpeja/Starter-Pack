@@ -1,2 +1,3 @@
 # Starter-Pack
-angular js and bower organised starter project
+Frontend: angular js, jade, npm and bower organised starter project
+Backend: CodeIgniter 3.0
